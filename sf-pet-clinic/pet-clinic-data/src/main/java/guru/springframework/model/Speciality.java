@@ -6,7 +6,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "specialties")
-public class Speciality {
+public class Speciality extends BaseEntity{
     @Column(name = "description")
     private String description;
 
