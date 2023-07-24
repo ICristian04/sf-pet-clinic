@@ -1,7 +1,7 @@
 package guru.springframework.repositories;
 
-import guru.springframework.model.Speciality;
+import guru.springframework.model.Specialty;
 import org.springframework.data.repository.CrudRepository;
 
-public interface SpecialtyRepository extends CrudRepository<Speciality, Long> {
+public interface SpecialtyRepository extends CrudRepository<Specialty, Long> {
 }

@@ -1,6 +1,6 @@
 package guru.springframework.services.springdatajpa;
 
-import guru.springframework.model.Speciality;
+import guru.springframework.model.Specialty;
 import guru.springframework.repositories.SpecialtyRepository;
 import guru.springframework.services.SpecialtyService;
 import org.springframework.context.annotation.Profile;
@@ -20,25 +20,25 @@ public class SpecialtySDJpaService implements SpecialtyService {
     }
 
     @Override
-    public Set<Speciality> findAll() {
-        Set<Speciality> specialities = new HashSet<>();
+    public Set<Specialty> findAll() {
+        Set<Specialty> specialities = new HashSet<>();
 
         specialtyRepository.findAll().forEach(specialities::add);
         return specialities;
     }
 
     @Override
-    public Speciality findById(Long aLong) {
+    public Specialty findById(Long aLong) {
         return specialtyRepository.findById(aLong).orElse(null);
     }
 
     @Override
-    public Speciality save(Speciality object) {
+    public Specialty save(Specialty object) {
         return specialtyRepository.save(object);
     }
 
     @Override
-    public void delete(Speciality object) {
+    public void delete(Specialty object) {
         specialtyRepository.delete(object);
     }
 
