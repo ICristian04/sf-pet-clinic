@@ -2,7 +2,7 @@ package guru.springframework.services.springdatajpa;
 
 import guru.springframework.model.Speciality;
 import guru.springframework.repositories.SpecialtyRepository;
-import guru.springframework.services.SpecialityService;
+import guru.springframework.services.SpecialtyService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.Set;
 
 @Service
 @Profile("springdatajpa")
-public class SpecialtySDJpaService implements SpecialityService {
+public class SpecialtySDJpaService implements SpecialtyService {
 
     private final SpecialtyRepository specialtyRepository;
 
