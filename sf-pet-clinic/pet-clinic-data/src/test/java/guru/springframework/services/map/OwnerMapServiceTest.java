@@ -28,7 +28,7 @@ class OwnerMapServiceTest {
 
     @Test
     void findAll() {
-       Set<Owner> owners = ownerMapService.findAll();
+        Set<Owner> owners = ownerMapService.findAll();
 
        assertEquals(1, owners.size());
     }
